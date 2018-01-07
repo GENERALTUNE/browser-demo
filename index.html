@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		#nav-body-views {
+            
+			height: 800px;
+		}
+
+        #nav-body-tabs {
+
+        }
+
+        #nav-body-tabs .nav-tabs-favicon {
+             /*fill:#000; width:24px; height:24px; align-content:flex-start; */
+             /*width:100px;*/
+        }
+
+        #nav-body-ctrls {
+
+        }
+
+
+
+	</style>
+</head>
+<body>
+	<!-- your code here -->
+<div id="nav-body-ctrls"></div>
+<div id="nav-body-tabs"></div>
+<div id="nav-body-views"></div>s
+
+
+<script>   
+    // create object
+    const enav = new (require('electron-navigation'))({ 
+        showAddTabButton: true,
+        showUrlBar: true,
+        showReloadButton: true 
+    })
+	
+    // enav.newTab('www.badiu.com', { id: 'srch' } )
+    
+    //setTimeout() is just used to show the effect.
+    // setTimeout("enav.changeTab('cool wallpapers', 'srch')", 2000)
+    // setTimeout("enav.back('srch')", 5000)
+    
+    // open a local file, and use a custom icon
+    enav.newTab(`file:///${__dirname}/template.html`, { 
+    	icon: 'images/logo.gif',
+    	title: ''            
+    })
+
+    // create an unclosable tab that you can reference later with the id.
+    // enav.newTab('baidu.com', {
+    // 	title: 'Watch Videos',
+    // 	icon: 'default',
+    // 	close: false,
+    // 	id: 'watchStuff'
+    // })
+    
+    // setTimeout('enav.changeTab( "https://www.baidu.com" , "watchStuff" );', 5000)
+    
+</script>
+</body>
+</body>
+</html>
