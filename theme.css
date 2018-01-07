@@ -1,0 +1,82 @@
+#nav-body-views {
+    
+	height: 800px;
+}
+
+#nav-body-tabs {
+    margin-bottom: 5px;
+}
+#nav-body-tabs .nav-tabs-title {
+     flex:1; cursor:default; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; 
+     font-family: sans-serif;
+     font-style:normal;
+     font-weight: normal;
+}
+
+
+#nav-body-tabs .nav-tabs-favicon {
+     fill:#000; width:24px; height:24px; align-content:flex-start; 
+     /*width:100px;*/
+}
+#nav-body-tabs .nav-icons {
+
+     fill:#000; width:24px; height:24px; 
+}
+#nav-body-tabs .nav-views-view {
+     /*fill:#000; width:24px; height:24px; align-content:flex-start; */
+     /*width:100px;*/
+     background-color: #ccc;
+     border: solid 1px #ccc;
+}
+
+#nav-body-tabs .nav-tabs-tab {
+        /* display:flex; align-items:center; min-width:60px; width:180px; min-height:20px; */
+     display:flex; align-items:center; min-width:60px; width:280px; min-height:30px; 
+   /*  background-color: #ccc;*/
+     border: solid 1px #ccc;
+
+}
+#nav-body-ctrls {
+    margin-bottom: 5px;
+}
+
+#nav-body-ctrls #nav-ctrls-url {
+    /* box-sizing:border-box; flex:1; height:24px; */
+    box-sizing:border-box; flex:1; height: 32px; 
+    font-size: 20px;
+}
+
+
+/* back button, grouped in: .nav-icons */
+
+#nav-body-ctrls #nav-ctrls-back {
+     fill:#000; width:40px; height:32px; 
+}
+
+
+/* back button with no history, grouped in: .nav-icons.disabled */
+
+#nav-body-ctrls #nav-ctrls-back.disabled {
+     pointer-events:none; opacity:0.5; 
+}
+
+
+/* forward button, grouped in: .nav-icons */
+
+#nav-body-ctrls #nav-ctrls-forward {
+     fill:#000; width:40px; height:32px; 
+}
+
+
+/* forward button with no history, grouped in: .nav-icons.disabled */
+
+#nav-body-ctrls #nav-ctrls-forward.disabled {
+    /* pointer-events:none; opacity:0.5; */
+}
+
+
+/* reload button, grouped in: .nav-icons */
+
+#nav-body-ctrls #nav-ctrls-reload {
+     fill:#000; width:40px; height:32px; 
+}

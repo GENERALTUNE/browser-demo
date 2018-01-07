@@ -3,34 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<style type="text/css">
-		#nav-body-views {
-            
-			height: 800px;
-		}
-
-        #nav-body-tabs {
-
-        }
-
-        #nav-body-tabs .nav-tabs-favicon {
-             /*fill:#000; width:24px; height:24px; align-content:flex-start; */
-             /*width:100px;*/
-        }
-
-        #nav-body-ctrls {
-
-        }
-
-
-
-	</style>
+    <link rel="stylesheet" type="text/css" href="theme.css">
 </head>
 <body>
 	<!-- your code here -->
-<div id="nav-body-ctrls"></div>
 <div id="nav-body-tabs"></div>
-<div id="nav-body-views"></div>s
+<div id="nav-body-ctrls"></div>
+<div id="nav-body-views"></div>
 
 
 <script>   
@@ -50,8 +29,10 @@
     // open a local file, and use a custom icon
     enav.newTab(`file:///${__dirname}/template.html`, { 
     	icon: 'images/logo.gif',
-    	title: ''            
+    	title: '乐彩网'            
     })
+
+    // enav.openDevTools();
 
     // create an unclosable tab that you can reference later with the id.
     // enav.newTab('baidu.com', {
