@@ -1,6 +1,7 @@
 const {
     app,
-    BrowserWindow
+    BrowserWindow,
+    nativeImage
 } = require('electron')
 
 let win
@@ -11,7 +12,7 @@ app.on('ready', () => {
         width: 1260,
         height: 800,
         title: "乐彩网浏览器",
-        icon: 'images/logo.gif'
+        icon: __dirname + '/images/lecai.png'
         // frame: false
     });
 
