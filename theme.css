@@ -3,6 +3,11 @@
 	height: 800px;
 }
 
+body {
+    height:100%;
+    overflow:hidden;
+}  //overflow:hidden为隐藏滚动条
+
 #nav-body-tabs {
     margin-bottom: 5px;
 }
@@ -36,6 +41,15 @@
      border: solid 1px #ccc;
 
 }
+#nav-body-tabs .nav-tabs-tab.active {
+        /* display:flex; align-items:center; min-width:60px; width:180px; min-height:20px; */
+     /*display:flex; align-items:center; min-width:60px; width:280px; min-height:30px; */
+   /*  background-color: #ccc;*/
+     background-color: #58de16;
+     /*border: solid 1px #ccc;*/
+
+}
+
 #nav-body-ctrls {
     margin-bottom: 5px;
 }
