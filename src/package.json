@@ -1,0 +1,11 @@
+{
+  "name": "electron-navigation-fork",
+  "version": "1.0.0",
+  "description": "base electron-navigation package to develop a better user experience navigation",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "zhumin",
+  "license": "MIT"
+}
