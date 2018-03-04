@@ -128,6 +128,15 @@ function Navigation(options) {
 
         return false
     })
+
+    $('document').on('keyup', 'body', function(target) {
+        if (target.event.keyCode == '123') {
+            var sessionId = $('#nav-body-tabs .nav-tabs-tab.active').data(session);
+            NAV.openDevTools(sessionId);
+        }
+    });
+
+
     //
     // add a tab, default to google.com
     //
@@ -542,15 +551,17 @@ Navigation.prototype.openDevTools = function(id) {
     let webview = null
 
     // check id
-    if (id == null) {
-        webview = $('.nav-views-view.active')[0]
-    } else {
-        if ($('#' + id).length) {
-            webview = document.getElementById(id)
-        } else {            
-            console.log('ERROR[electron-navigation][func "openDevTools();"]: Cannot find the ID "' + id + '"')
-        }
-    }
+    // if (id == null) {
+    //     webview = $('.nav-views-view.active')[0]
+    // } else {
+    //     if ($('#' + id).length) {
+    //         webview = document.getElementById(id)
+    //     } else {            
+    //         console.log('ERROR[electron-navigation][func "openDevTools();"]: Cannot find the ID "' + id + '"')
+    //     }
+    // }
+
+    webview = $('.nav-views-view.active')[0]
     
     // open dev tools
     if (webview != null) {

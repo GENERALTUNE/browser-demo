@@ -19,6 +19,8 @@
         showUrlBar: true,
         showReloadButton: true 
     })
+
+    var $ = require('jquery')
 	
     // enav.newTab('www.badiu.com', { id: 'srch' } )
     
@@ -29,8 +31,18 @@
     // open a local file, and use a custom icon
     enav.newTab(`file:///${__dirname}/template.html`, { 
     	// icon: 'images/logo.gif',
-    	title: '乐彩网'            
+    	title: '乐彩网'               
     })
+
+    document.addEventListener("keyup",function(event) {
+
+        if ( event.keyCode == '123' ) {
+            var session = document.querySelector('#nav-body-tabs .nav-tabs-tab.active');
+            var sessionId = $(session).data('session');
+            enav.openDevTools(sessionId);
+            // alert('hello world!' + sessionId);
+        }
+    },true);
 
     // enav.openDevTools();
 
